@@ -1,4 +1,4 @@
-You may also need to check <https://chromium.googlesource.com/chromiumos/docs/+/HEAD/glossary.md>.
+You may also need to check <https://chromium.googlesource.com/chromiumos/docs/+/HEAD/glossuary.md>.
 
 * CITGM: "The Canary in the Goldmine". CITGM is a simple tool for pulling down
   an arbitrary module from npm and testing it using a specific version of the
