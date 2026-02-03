@@ -20,11 +20,9 @@ jobs:
 
     strategy:
       fail-fast: false
-      matrix:
-        target_arch: [arm, arm64, x86_64]
-
+      
     env:
-      TARGET_ARCH: ${{ matrix.target_arch }}
+      TARGET_ARCH: arm
 
     steps:
       # 1️⃣ Checkout repo
