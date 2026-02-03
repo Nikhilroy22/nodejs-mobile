@@ -41,12 +41,12 @@ BUILD_ARCH() {
     TARGET_ARCH_FOLDER="arm64-v8a"
   fi
   mkdir -p "out_android/$TARGET_ARCH_FOLDER/"
-  OUTPUT1="out/Release/lib.target/libnode"
-  OUTPUT2="out/Release/obj.target/libnode"
+  OUTPUT1="out/Release/lib.target/"
+  OUTPUT2="out/Release/obj.target/"
   if [ -f "$OUTPUT1" ]; then
-    cp "$OUTPUT1" "out_android/$TARGET_ARCH_FOLDER/libnode"
+    cp "$OUTPUT1" "out_android/$TARGET_ARCH_FOLDER/"
   elif [ -f "$OUTPUT2" ]; then
-    cp "$OUTPUT2" "out_android/$TARGET_ARCH_FOLDER/libnode"
+    cp "$OUTPUT2" "out_android/$TARGET_ARCH_FOLDER/"
   else
     echo "Could not find libnode.so file after compilation"
     exit 1
