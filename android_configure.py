@@ -79,4 +79,15 @@ os.environ['GYP_DEFINES'] = GYP_DEFINES
 
 if os.path.exists("./configure"):
     # nodejs-mobile patch: added --with-intl=none and --shared
-     os.system("./configure --dest-cpu=" + DEST_CPU + " --dest-os=android --openssl-no-asm --with-intl=none --cross-compiling --shared")
+ os.system(
+  "./configure "
+  "--dest-cpu=" + DEST_CPU +
+  " --dest-os=android "
+  "--openssl-no-asm "
+  "--with-intl=none "
+  "--cross-compiling "
+  "--without-shared-openssl "
+  "--without-shared-zlib "
+  "--without-shared-cares "
+  "--without-shared-sqlite"
+)
