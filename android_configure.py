@@ -124,9 +124,9 @@ cmd = (
     "--dest-os=android "
     "--cross-compiling "
     "--with-intl=none "
-    "--openssl-no-asm"
+    "--openssl-no-asm "
+    "--disable-tests"
 )
-
 print("\033[92mInfo:\033[0m Running:", cmd)
 ret = os.system(cmd)
 sys.exit(ret)
